@@ -1,14 +1,53 @@
 {% render 'partials/head.liquid' %}
 
-<article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
+<article class="profile-card-example">
+      
+      <header class="profile-card-example-header">
 
-  <p>{{ person.name }}</p>
+        <!-- Naam in een koptekst -->
+        <h1>{{ person.name }}</h1>
+        
+        <p><em>Creative Frontend Developer</em></p>
+        
+        <button class="profile-card-example-button">
+          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <title>Wijzig layout</title>
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M4 8v-2a2 2 0 0 1 2 -2h2"></path>
+            <path d="M4 16v2a2 2 0 0 0 2 2h2"></path>
+            <path d="M16 4h2a2 2 0 0 1 2 2v2"></path>
+            <path d="M16 20h2a2 2 0 0 0 2 -2v-2"></path>
+          </svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M15 19v-2a2 2 0 0 1 2 -2h2"></path>
+            <path d="M15 5v2a2 2 0 0 0 2 2h2"></path>
+            <path d="M5 15h2a2 2 0 0 1 2 2v2"></path>
+            <path d="M5 9h2a2 2 0 0 0 2 -2v-2"></path>
+          </svg>
+        </button>
+        
+      </header>
+      <!-- Profielfoto -->
+      <img src="assets/Squad1J-Mete.jpeg" alt="" width="800" height="800" class="profile-card-example-img">
+      <!-- lijst van skills met iconen -->
+      <dl class="profile-card-example-dl">
+        <dt>HTML</dt>
+        <!-- icon voor html -->
+        <dd><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 logo"></dd>
+        <dt>CSS</dt>
+        <!-- icon voor css -->
+        <dd><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 logo"></dd>
 
-  <footer></footer>
-</article>
+        <dt>JavaScript</dt>
+        <!-- icon voor js -->
+        <dd><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo"></dd>
+      </dl>
+  <!-- paragraaf met persoonlijke tekst -->
+      <p>Code is mijn superkracht! <br> Met HTML, CSS en JS bouw ik gave, interactieve webervaringen.</p>
+      
+    </article>
+
+    <script src="scripts/script.js"></script>
 
 {% render 'partials/foot.liquid' %}
