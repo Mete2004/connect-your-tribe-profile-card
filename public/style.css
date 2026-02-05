@@ -2,12 +2,8 @@
   box-sizing: border-box;
 }
 
-html:has(.profile-card-example),
-body:has(.profile-card-example) {
-  height: 100vh;
-}
-
-body:has(.profile-card-example) {
+body {
+  min-height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +19,7 @@ body:has(.profile-card-example) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50vw;
+  width: 35vw;
   max-width: 35em;
   min-width: 20em;
   border-radius: 1.25rem;
@@ -33,7 +29,6 @@ body:has(.profile-card-example) {
     0 30px 80px rgba(0,0,0,.6);
   transition: .25s ease;
   overflow: hidden;
-  max-height: 95vh;
 }
 
 /* ================= HEADER ================= */
@@ -207,6 +202,7 @@ body.is-expanded {
 
 body.is-expanded .profile-card-example {
   width: 60vw;
+  /* height: 100vh; */
 }
 
 body.is-expanded .profile-card-example-img {
